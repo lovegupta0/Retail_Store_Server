@@ -21,6 +21,7 @@ public class Product {
     private String name;
     private String unitType;
     private String description;
+    private String imgae;
     @OneToMany(mappedBy = "product",fetch = FetchType.LAZY,orphanRemoval = true)
     @JsonIgnore
     private List<ProductInventory> inventories;
